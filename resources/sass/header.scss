@@ -1,0 +1,146 @@
+.header {
+  padding: 15px 0;
+  background-color: #2b2827;
+
+  &__container {
+
+  }
+
+  &__header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      padding: 0 30px;
+    }
+  }
+
+  &__logo {
+
+  }
+
+  &__navigation {
+  }
+
+  &__button {
+  }
+
+  &__login {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  &__project {
+    min-width: 330px;
+
+    @media (max-width: 540px) {
+      display: none;
+    }
+  }
+
+  &__project-a {
+    display: none;
+
+    @media (max-width: 540px) {
+      display: flex;
+    }
+  }
+}
+
+.item {
+  &__search-image {
+    min-width: 39px;
+  }
+}
+
+.navigation {
+  &__menu {
+    display: flex;
+  }
+}
+
+.menu {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    :hover {
+      color: #caae7a;
+    }
+
+    :focus {
+      color: #caae7a;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    color: #838a40;
+    letter-spacing: .3px;
+    transition: .4s;
+
+    &::after {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 0;
+      height: 4px;
+      content: "";
+      background-color: #caae7a;
+      transition: .4s;
+    }
+
+    &:hover::after {
+      left: 0;
+      width: 35%;
+    }
+
+    &:focus::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.section--active {
+  color: #caae7a;
+
+  &::after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.item__button {
+  display: none;
+  padding: 15px 20px;
+  background-color: white;
+  color: white;
+
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}
+
+.item__button:hover {
+  color: #838a40;
+}
+
+.hidden {
+  display: none;
+}
+
+.header ul {
+  margin-bottom: 0;
+}

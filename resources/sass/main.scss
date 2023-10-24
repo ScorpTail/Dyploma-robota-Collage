@@ -1,0 +1,300 @@
+.main {
+  &__conteiner {
+
+  }
+
+  &__main-swiper {
+
+  }
+
+  &__main-content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+
+    @media (max-width: 800px) {
+      gap: 40px;
+    }
+  }
+}
+
+.main-swiper {
+  &__swiper {
+    margin-top: -95px;
+  }
+}
+
+.main-content-section {
+  &__welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  &__gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 550px;
+    text-align: center;
+  }
+
+  &__our-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  &__our-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  &__what-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  &__graduation-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    text-align: center;
+  }
+
+  &__about-restavration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    &__graduation-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 85%;
+      text-align: center;
+    }
+  }
+}
+
+.welcome {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+.gallery {
+  &__left-side {
+    width: 55%;
+    height: 100%;
+  }
+
+  &__right-side {
+    width: 35%;
+    height: 100%;
+  }
+}
+
+.left-side {
+  &__image-gallery {
+    height: 100%;
+  }
+}
+
+.right-side {
+  &__image-gallery {
+    height: 100%;
+  }
+}
+
+.our-services {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+}
+
+.our-history {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+}
+
+.what-to-know {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+.graduation-section {
+  &__left-side {
+    width: 65%;
+  }
+
+  &__right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56%;
+    height: 800px;
+  }
+
+  @media (max-width: 800px) {
+    &__right-side {
+      position: relative;
+      width: 50%;
+      height: 200px;
+    }
+
+    &__left-side {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__right-side {
+      height: 100px;
+    }
+  }
+}
+
+.right-side {
+  &__top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    color: inherit;
+    background-color: #f3f5e8;
+
+    &:hover {
+      background-color: #f7e2bb;
+      transition: .4s;
+    }
+
+    & a {
+      width: 100%;
+      color: inherit;
+    }
+  }
+
+  &__bottom-section {
+    width: 100%;
+  }
+}
+
+.top-section {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+}
+
+.about-restavration {
+  &__subtitle {
+    padding: 10px;
+  }
+
+  &__title {
+    padding: 5px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,126 @@
+.user-cabinet {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 75%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.content {
+  &__graduation-select {
+    width: 90%;
+    text-align: end;
+  }
+
+  &__else-empty {
+    padding: 30px 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+
+.services-content {
+  &__services-card {
+    display: flex;
+    width: 90%;
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 40%) 0 2px 4px, rgb(0 0 0 / 30%) 0 7px 13px -3px, rgb(0 0 0 / 20%) 0 -3px 0 inset;
+
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
+.services-card {
+  &__card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.card-description {
+  &__upper-section-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__middle-section-card {
+    display: flex;
+    gap: 20%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  &__bottom-section-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.upper-section-card {
+  &__graduation-photo-list {
+    display: flex;
+    gap: 5%;
+    width: 80%;
+  }
+
+  &__graduation-date {
+    width: 15%;
+    font-weight: 500;
+    text-align: end;
+  }
+}
+
+.graduation-photo-list {
+  &__graduation-image {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 1000px) {
+      width: 100px;
+    }
+
+    @media (max-width: 564px) {
+      width: 80px;
+    }
+  }
+}
+
+.middle-section-card {
+  &__graduation-left-side {
+  }
+
+  &__graduation-right-side {
+  }
+}
+
+.bottom-section-card {
+  &__graduation-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__graduation-message {
+    text-align: start;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,33 @@
+.container input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50px !important;
+  fill: #666666;
+  transition: all .3s;
+}
+
+.container svg:hover {
+  transform: scale(1.1);
+}
+
+.container input:checked ~ svg {
+  fill: #caae7a;
+}

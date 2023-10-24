@@ -1,0 +1,79 @@
+///////////
+.user-account {
+  &__left-side {
+  }
+
+  &__right-side {
+    width: 100%;
+  }
+}
+
+.right-side {
+  &__sort {
+  }
+
+  &__content-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.content-side {
+  &__email-section {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    font-size: 23px;
+
+    @media (max-width: 430px) {
+      flex-direction: column;
+    }
+  }
+
+  &__email-section svg {
+    @media (max-width: 570px) {
+      display: none;
+    }
+  }
+
+  &__label {
+  }
+
+  &__field {
+  }
+
+  &__resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.resume-section {
+  &__label {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    width: 100%;
+    font-size: 23px;
+
+    @media (max-width: 430px) {
+      justify-content: center;
+    }
+  }
+
+  &__label svg {
+    @media (max-width: 570px) {
+      display: none;
+    }
+  }
+
+  &__resume {
+    margin-left: 3%;
+    font-size: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

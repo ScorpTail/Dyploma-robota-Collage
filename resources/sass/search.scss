@@ -1,0 +1,13 @@
+.suggestions a {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggestions a:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+
+}

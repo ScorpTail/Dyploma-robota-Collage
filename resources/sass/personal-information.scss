@@ -1,0 +1,159 @@
+.user-cabinet {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    width: 70%;
+    margin-left: 3%;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      margin-left: 5%;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.content {
+  &__personal-information {
+    display: flex;
+    gap: 25%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__edit-button {
+    margin-top: 25px;
+
+    input[type="submit"] {
+      display: none;
+    }
+  }
+
+  &__resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__label {
+    font-size: 20px;
+  }
+}
+
+.edit-button__edit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-information {
+  &__content-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+  }
+}
+
+.content-title {
+  &__name-section {
+  }
+
+  &__label {
+  }
+
+  &__field {
+  }
+
+  &__email-section {
+    @media (max-width: 450px) {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__data {
+  }
+
+  &__personal-info-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+  }
+}
+
+.personal-info-right-side {
+  &__user-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__label {
+  }
+
+  &__profession-section {
+  }
+
+  &__field {
+  }
+
+  &__area-section {
+  }
+}
+
+.edit--active {
+  .__button {
+    display: none;
+  }
+
+  input[type="submit"] {
+    display: block;
+  }
+
+  input[type="file"] {
+    visibility: visible;
+  }
+}
+
+.content-form-right {
+  &__textarea-input {
+  }
+}
+
+.user-avatar {
+  &__avatar {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    background-image: url("../../public/storage/image/avatar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}
+
+.avatar {
+  &__load {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50%;
+    opacity: 0;
+  }
+}

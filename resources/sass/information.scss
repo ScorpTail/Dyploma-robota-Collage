@@ -1,0 +1,36 @@
+[class*="__description"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+[class*="__subtitle"] {
+  font-size: .8125rem;
+  font-weight: 700;
+  color: #838a40;
+}
+
+[class*="__title"] {
+  font-family: "Open Sans";
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: .0625rem;
+}
+
+[class*="__title-authorize"] {
+  font-family: "Open Sans";
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: .0625rem;
+}
+
+@media only screen and (max-width: 800px) {
+  [class*="__title"] {
+    font-size: 1rem;
+  }
+
+  [class*="__subtitle"] {
+    font-size: .5rem;
+  }
+}

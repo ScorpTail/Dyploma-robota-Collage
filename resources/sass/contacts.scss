@@ -1,0 +1,141 @@
+.main {
+  &__container {
+  }
+
+  &__contacts {
+  }
+}
+
+.contacts {
+  &__description {
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+
+    @media (max-width: 470px) {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+}
+
+.content {
+  &__information-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 683px;
+    color: white;
+    background-image: url("../../public/storage/image/background_contacts.svg");
+
+    @media (max-width: 470px) {
+      width: 100%;
+      min-height: 503px;
+    }
+  }
+
+  &__contacts-form {
+    position: absolute;
+    bottom: 50px;
+    left: 42.7%;
+    min-width: 57%;
+    padding: 50px;
+    background: rgb(202 174 122);
+    background: linear-gradient(90deg, rgb(202 174 122 / 100%) 59%, rgb(131 138 64 / 100%) 100%);
+    filter: drop-shadow(0 34px 34px rgb(0 0 0 / 60%));
+
+    @media (max-width: 550px) {
+      padding: 30px;
+    }
+
+    @media (max-width: 470px) {
+      position: relative;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.information-contacts {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__dt {
+    padding: 10px 0;
+    font-size: 25px;
+
+    @media (max-width: 520px) {
+      font-size: 20px;
+    }
+  }
+
+  &__dd {
+    padding: 10px 0;
+    font-size: 20px;
+
+    @media (max-width: 520px) {
+      font-size: 17px;
+    }
+  }
+}
+
+.contacts-form {
+  &__title {
+    padding: 10px 0;
+  }
+
+  &__name {
+
+  }
+
+  &__input {
+    width: 70%;
+
+    @media (max-width: 470px) {
+      position: relative;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__email {
+    margin-top: 20px;
+  }
+
+  &__phone-number {
+    margin-top: 20px;
+  }
+
+  &__message {
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 10px;
+  }
+
+  &__btn-contacts {
+    input[type="submit"] {
+      &:hover {
+        font-weight: 600;
+        background-color: #838a40;
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+.message {
+  &__textarea-input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+.graduation-form {
+  &__photoList {
+    display: flex;
+    gap: 5px;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  &__photoList li {
+    padding: 5px;
+    border: .1px solid black;
+    border-radius: 4px;
+
+    &:hover {
+      color: black;
+      background-color: rgb(250 96 96);
+      transition: .6s;
+    }
+  }
+}
+
+.photoListGraduation {
+  display: flex;
+  gap: 20px;
+
+  &__photoListGraduationImg {
+    width: 250px;
+    height: 200px;
+    border-radius: .4vw;
+    box-shadow: 0 0 .4vw rgb(0 0 0 / 50%), 0 0 0 .15vw transparent;
+    transition: .4s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+

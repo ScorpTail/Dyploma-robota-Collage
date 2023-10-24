@@ -1,0 +1,75 @@
+.main {
+  &__container {
+  }
+
+  &__content {
+  }
+}
+
+.content {
+  &__workshop {
+  }
+
+  &__history {
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  &__hr {
+    height: .1px;
+    margin-top: 50px;
+    background-color: gray;
+    opacity: .5;
+  }
+}
+
+.workshop {
+  &__description {
+  }
+
+  &__title {
+    padding: 10px;
+  }
+
+  &__subtitle {
+    padding: 5px;
+  }
+
+  &__workshop-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+.workshop-content__guarantee {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history {
+  &__description {
+  }
+
+  &__title {
+    padding: 10px;
+  }
+
+  &__subtitle {
+    padding: 5px;
+  }
+
+  &__histroy-content {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: .5px;
+  }
+}

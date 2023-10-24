@@ -1,0 +1,177 @@
+.account-holder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bread {
+  position: absolute;
+  top: -80px;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 450px) {
+    right: 0;
+  }
+}
+
+.bread-crumbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f1f1ee;
+  border: 1px solid #838a40;
+  box-shadow: 0 4px 16px #838a40;
+
+  &__title-authorize {
+    margin-bottom: 20px;
+    font-weight: 600;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__master-link {
+    padding: 20px;
+    background-color: black;
+  }
+}
+
+.fields {
+  &__bottom-btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+  padding: 50px 0;
+  border: 1px solid rgb(0 0 0 / 10.2%);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 40%), 0 10px 10px -5px rgb(0 0 0 / 20%);
+
+  @media (max-width: 330px) {
+    padding: 10px 15px;
+  }
+
+  @media (max-width: 650px) {
+    width: 80%;
+  }
+}
+
+.form {
+  &__title-authorize {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__fields {
+    width: 50%;
+    text-align: center;
+
+    @media (max-width: 650px) {
+      width: 80%;
+    }
+  }
+
+  &__link-pass,
+  &__link-text {
+    text-align: start;
+
+    a {
+      position: relative;
+      font-weight: 400;
+      color: gray;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: #838a40;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        content: "";
+        background-color: #838a40;
+        transition: .6s;
+      }
+
+      &:hover::after {
+        left: 0;
+        width: 35%;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__and {
+    margin-bottom: 20px;
+  }
+}
+
+////////////////////////////////////////
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 30px 0;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  outline: none;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgb(204 204 204 / 0%);
+  pointer-events: none;
+  transition: all .3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all .3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: black;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
